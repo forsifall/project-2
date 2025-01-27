@@ -1,0 +1,22 @@
+:root {
+    /* темные цвета*/
+--dark-color: #000000;
+--dark-color-600: #000005a1;
+--dark-color-300: #0000009c;
+--dark-color-160: #00000160;
+--dark-color-80: #00000080;
+--dark-color-40: #00000040;
+--dark-color-20: #00000020;
+
+    /* светлые цвета*/
+--white-color: #ffffff;
+--white-color-10: #ffffffe4;
+--white-color-30: #ffffffaa;
+--white-color-50: #ffffff80;
+--white-color-100: #9898988e;
+
+    /* accent-color */
+   --error: #a01010;
+   --warm-blue: rgba(42, 104, 249, 0.925)
+   
+}

@@ -1,0 +1,229 @@
+/* мужик */
+
+.skate-man {
+    width: 600px;
+    position: relative;
+    float: right;
+    margin-right: 2%;
+    bottom: calc(-100% + 500px);
+    overflow-x: hidden;
+    object-fit: cover;
+    cursor: pointer;
+    user-select: none;
+
+    transform: translateY(0vh);
+    transition: transform 1s;
+    
+}
+
+.skate-man:hover {
+    transform: translateY(-20vh);
+    
+}
+
+/* левый блок */
+
+.skate-man:hover::before {
+    content: "защита";
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: var(--white-color-30);
+    opacity: 1;
+    transform: translateX(0px);
+}
+.skate-man::before {
+    content: "";
+    width: 180px;
+    height: 40px;
+    display: block;
+    background-color: var(--dark-color-40);;
+    position: absolute;
+    top: 20px;
+    transform: translateX(-140px);
+    opacity: 0; 
+    transition: 0.5s; 
+    
+}
+
+/* правый блок */
+
+.skate-man::after {
+    content: "";
+    width: 180px;
+    height: 40px;
+    background-color: var(--dark-color-40);
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    transform: translateX(140px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.skate-man:hover::after {
+    content: "доски";
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: var(--white-color-30);
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.skate-image {
+    object-fit: cover;
+    margin: auto;
+    width: 300px; 
+    height: 900px;
+}
+
+.label {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    /* background-color: var(--dark-color-40); */
+    font-family: "Gowun Dodum";
+    color: var(--dark-color);
+}
+
+.label--top-left {
+    top: 30%;
+    left: 10%;
+}
+
+.label h1 {
+    font-size: clamp(2.575rem, 0.882rem + 2.91vw, 4.375rem);
+    line-height: 1;
+}
+
+
+.label p {
+    font-size: clamp(1rem, 1.151rem + 0.29vw, 1.5rem);
+    max-width: 550px;
+    font-family:serif;
+}
+
+.label__button1 {
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--white-color-10);
+    color: var(--dark-color-300);
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.label__button2 {
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-color-300);
+    color: var(--white-color-30);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.label__button1:hover {
+    background-color: var(--white-color);
+    color: var(--dark-color);   
+    box-shadow: 1px 1px 30px 3px rgba(0, 0, 0, 0.672)
+
+}   
+
+.label__button2:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color-10);
+    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.44)
+
+}
+
+.word-skateboarding {
+    color: var(--dark-color-300);
+    transition: color 0.3s ease-in-out;
+}
+
+.label:has(.label__button1:hover) .word-skateboarding {
+    color: white;
+   
+}
+
+.label:has(.label__button2:hover) .word-skateboarding {
+    color: white;
+  
+}
+
+
+.modal-search {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid var(--white-color-100);
+    background-color: var(--dark-color-160);
+    backdrop-filter: blur(50px);
+    z-index: 10;
+}
+
+.modal-search__icon {
+    fill: var(--white-color-30);
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.modal-search__input {
+    width: 68%;
+    height: 50%;
+    color: var(--white-color-10);
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-search__input::placeholder {
+    color: var(--white-color-10);
+}
+
+.modal-search__interection-buttons {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.modal-search__interection-buttons span:nth-child(1) {
+    user-select: none;
+    font-size: 18px;
+    color: var(--white-color-50);
+    margin-right: 10px;
+}
+
+.modal-search__interection-buttons span:nth-child(1):hover {
+  color: var(--white-color-10);
+}
+
+.modal-search__interection-buttons span:nth-child(2) {
+    user-select: none;
+    color: var(--white-color-100);
+}
+
+.modal-search__interection-buttons svg {
+    user-select: none;
+    margin-top: 3px;
+    padding: 6px;
+    color: var(--white-color-30);
+}
+
+.modal-search__interection-buttons svg:hover {
+   background-color: rgba(255, 255, 255, 0.097);
+   border-radius: 50%;
+}
+
+

@@ -1,0 +1,31 @@
+@keyframes scroll-header {
+ 
+    to {
+        background-color: var(--white-color-10);
+        backdrop-filter: blur(3px);
+        box-shadow: 0px 12px 15px 0px rgba(13, 13, 13, 0.815);
+        top: 20px;
+        border-radius: 10px;
+    }
+}
+
+@keyframes scroll-gallerey-right-top {
+    from {
+        transform: translate(500px, -300px);
+        opacity: 0;
+    }
+}
+
+@keyframes scroll-gallerey-left-top {
+    from {
+        transform: translate(-500px,-300px);
+        opacity: 0;
+    }
+}
+
+@keyframes scroll-gallerey-right {
+    from {
+        transform: translate(600px);
+        opacity: 0;
+    }
+}

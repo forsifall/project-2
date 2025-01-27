@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input:focus {
+    outline: 0px;
+}
+
+input {
+    border: none;
+}
+
+::placeholder {
+    color: var(--dark-color-300);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}

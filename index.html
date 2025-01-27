@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sections/header.css">
+    <link rel="stylesheet" href="css/sections/hero-sections.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/key-frames.css">
+    <link rel="stylesheet" href="css/sections/gallerey1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    
+<section class="hero-section">
+
+
+<div class="header">
+<div class="header__container">
+    
+<div class="header__d-flex">    
+<a href="#" class="logo__link" draggable="false">
+<svg class="logo__svg" width="205px" height="91px" > 
+<image href="svg/logo.svg" width="100px" height="85px" alt="logo"></image>
+<text>
+    <tspan x="90" y="38" font-size="30px"  class="logo__text1">steam</tspan>    
+    <tspan x="90" y="65" font-size="30px"  class="logo__text2">lat</tspan>  
+</text>  
+</svg>
+</a>
+
+<div class="header__middle-content">
+
+<input class="header__search" id="headerSearch" type="text" placeholder="&#128269; поиск(Cntrl + K)">
+
+<template id="search-template">
+    <div class="modal">
+        <div class="modal-search">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50" class="modal-search__icon">
+                <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                </svg>
+
+                <input type="text" class="modal-search__input" id="modalSearchInput" placeholder="введите текст">
+
+                <div class="modal-search__interection-buttons">
+                    <span>очистить</span>
+                    <span>|</span>
+                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="var(--white-color-30)" width="15px" height="15px">
+                        <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                </div>
+        </div>
+    </div>
+</template>
+
+<ul class="menu">
+    <a href="#"><li>some1</li></a>
+    <a href="#"><li>some2</li></a>
+    <a href="#"><li>some3</li></a>
+    <a href="#"><li>some4</li></a>
+    <a href="#"><li>some5</li></a>
+    
+</ul>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="label label--top-left">
+<h1>Steam online store<br> with <span class="word-skateboarding">skateboarding<br></span> assortment.</h1><br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae assumenda, voluptatem veniam, ullam quas iure</p><br>
+<button class="label__button1">перейти</button>
+<button class="label__button2">заказать</button>
+</div>
+
+<div class="skate-man">
+<img class="skate-image" src="images/lifestyle-brunette-hispanic-fashion-activity-Photoroom.png" draggable="false">
+</div>
+
+</section>
+
+<!-- GALLEREY1 BODY  -->
+
+<div class="gallerey1__container">
+<div class="gallerey">
+
+<div class="gallerey1__main-block">
+<div class="gallerey1__text-sectionM">
+    <h1 class="text-animation-off">A skateboard consists of a deck, trucks, wheels, bearings, grip tape, and hardware.</h1>
+    <span class="text-animation-off">Designed for balance, speed, and tricks.</span>
+</div>
+<img class="gallerey__photo" src="images/skate x 10.jpg" width="60%" height="100%" draggable="false">
+</div>
+
+<div class="gallerey1__left-block">
+<div class="gallerey1__text-sectionL">
+    <span id="textAnimationLSpan" class="text-animation-left-off"></span>
+    <h1 id="textAnimationLH1" class="text-animation-left-off">Built to ride, grind, and cruise.</h1>
+</div>
+<img class="gallerey__photo" src="images/chb manskate.jpg" width="100%" height="80%" draggable="false">
+</div>
+
+<div class="gallerey1__right-block gallerey__photo--dark">
+<img class="gallerey__photo " src="images/santa-cruz.jpg" width="100%" height="80%" draggable="false">
+<div class="gallerey1__text-sectionR">
+    <span id="textAnimationRSpan" class="text-animation-right-off"></span>
+    <h1 id="textAnimationRH1" class="text-animation-right-off">Push your limits, own the streets.</h1>
+</div>
+</div>
+
+</div>
+</div>    
+
+<script src="src/main.js" type="module"></script>
+</body>
+</html>

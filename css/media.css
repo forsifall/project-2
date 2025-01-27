@@ -1,0 +1,117 @@
+@media(max-width: 1920px) {
+   
+    .header__container {
+        width: clamp(100px,1092px,1092px);
+       }
+
+       .gallerey1__text-sectionM span {
+        margin-right: 125px;
+    }
+
+}
+
+@media(max-width: 1200px) {
+    .hero-section {
+        background-position: 50% 50%;
+    }
+
+    .header__container {
+        width: clamp(100px,900px,900px);
+
+       }
+       
+       .skate-image,
+       .skate-man {
+        display: none;
+       }
+
+       .gallerey1__text-sectionM span {
+        margin-right: 0px;
+    }
+
+}
+
+@media(max-width: 992px) {
+
+    .header__container {
+        width: clamp(100px,400px,400px);
+
+       }
+       .menu {
+        display: none;
+       }
+
+       .skate-image,
+       .skate-man {
+        display: none;
+       }
+
+       .modal-search {
+        width: 600px;
+       }
+
+ }
+
+@media(max-width: 768px) {
+
+   .logo__svg text {
+    display: none;
+
+   }
+
+   .logo__svg {
+    width: 100px;
+
+   }
+
+   .header__container {
+
+    width: clamp(100px,300px,300px);
+   }
+
+   .modal-search {
+    width: 500px;
+   }
+
+   .modal-search__interection-buttons span:nth-child(2) {
+    display: none;
+}
+   .modal-search__interection-buttons span:nth-child(1) {
+    display: none;
+}
+
+   .label p {
+    max-width: 400px;
+   }
+
+}
+
+@media(max-width: 576px) {
+ 
+    .menu {
+        display: none;
+    }
+
+    .label.label--top-left {
+        left: 5%;
+        top: 30%;
+    }
+
+    .modal-search {
+        width: 80%;
+       }
+
+       .modal-search__interection-buttons span:nth-child(2) {
+        display: none;
+    }
+       .modal-search__interection-buttons span:nth-child(1) {
+        display: none;
+    }
+    
+    .label p {
+        max-width: 300px;
+       }
+    
+    
+
+ }
