@@ -1,0 +1,204 @@
+.bg-video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.skate-man {
+    width: 600px;
+    position: relative;
+    float: right;
+    margin-right: 2%;
+    bottom: calc(-100% + 500px);
+    overflow-x: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-transform: translateY(0vh);
+
+        -ms-transform: translateY(0vh);
+
+            transform: translateY(0vh);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    
+}
+
+.skate-man:hover {
+    -webkit-transform: translateY(-20vh);
+        -ms-transform: translateY(-20vh);
+            transform: translateY(-20vh);
+    
+}
+
+/* левый блок */
+
+.skate-man:hover::before {
+    content: "защита";
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: var(--white-color-30);
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+}
+.skate-man::before {
+    content: "";
+    width: 180px;
+    height: 40px;
+    display: block;
+    background-color: var(--dark-color-40);;
+    position: absolute;
+    top: 20px;
+    -webkit-transform: translateX(-140px);
+        -ms-transform: translateX(-140px);
+            transform: translateX(-140px);
+    opacity: 0; 
+    -webkit-transition: 0.5s; 
+    -o-transition: 0.5s; 
+    transition: 0.5s; 
+    
+}
+
+/* правый блок */
+
+.skate-man::after {
+    content: "";
+    width: 180px;
+    height: 40px;
+    background-color: var(--dark-color-40);
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    -webkit-transform: translateX(140px);
+        -ms-transform: translateX(140px);
+            transform: translateX(140px);
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.skate-man:hover::after {
+    content: "доски";
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: var(--white-color-30);
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+}
+
+.skate-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: auto;
+    width: 300px; 
+    height: 900px;
+}
+
+.label {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    /* background-color: var(--dark-color-40); */
+    font-family: "Gowun Dodum";
+    color: var(--white-color-30);
+}
+
+.label--top-left {
+    top: 30%;
+    left: 10%;
+}
+
+.label h1 {
+    font-size: clamp(2.575rem, 0.882rem + 2.91vw, 4.375rem);
+    line-height: 1;
+}
+
+
+.label p {
+    font-size: clamp(1rem, 1.151rem + 0.29vw, 1.5rem);
+    max-width: 550px;
+    font-family:serif;
+}
+
+.label__button1 {
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-color-600);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    color: var(--white-color-30);
+    font-weight: 100;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.label__button2 {
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-color-300);
+    color: var(--white-color-30);
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+
+.label__button1:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color-10);   
+    
+    box-shadow: inset 0px 3px 30px -7px rgb(23, 48, 160)
+
+
+}   
+
+.label__button2:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color-10);
+    -webkit-box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.44);
+            box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.44)
+
+}
+
+.word-skateboarding {
+    color: var(--warm-blue);
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+.label:has(.label__button1:hover) .word-skateboarding {
+    color: darkblue;
+    filter: blur(2px);
+   
+}
+
+.label:has(.label__button2:hover) .word-skateboarding {
+    color: white;
+  
+}
+

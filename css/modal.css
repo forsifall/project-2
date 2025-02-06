@@ -1,0 +1,182 @@
+.modal-search {
+    width: 600px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid var(--white-color-100);
+    background-color: var(--dark-color-160);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    z-index: 10;
+}
+
+.modal-search__icon {
+    fill: var(--white-color-30);
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.modal-search__input {
+    width: 100%;
+    height: 50%;
+    color: var(--white-color-10);
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-search__input::-webkit-input-placeholder {
+    color: var(--white-color-10);
+}
+
+.modal-search__input::-moz-placeholder {
+    color: var(--white-color-10);
+}
+
+.modal-search__input:-ms-input-placeholder {
+    color: var(--white-color-10);
+}
+
+.modal-search__input::-ms-input-placeholder {
+    color: var(--white-color-10);
+}
+
+.modal-search__input::placeholder {
+    color: var(--white-color-10);
+}
+
+.modal-search__interection-buttons {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+}
+
+.modal-search__interection-buttons span:nth-child(1) {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 18px;
+    color: var(--white-color-50);
+    margin-right: 10px;
+}
+
+.modal-search__interection-buttons span:nth-child(1):hover {
+  color: var(--white-color-10);
+}
+
+.modal-search__interection-buttons span:nth-child(2) {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: var(--white-color-100);
+}
+
+.modal-search__interection-buttons svg {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    margin-top: 3px;
+    padding: 6px;
+    color: var(--white-color-30);
+}
+
+.modal-search__interection-buttons svg:hover {
+   background-color: rgba(255, 255, 255, 0.097);
+   border-radius: 50%;
+}
+
+.modal-search__form {
+    width: 68%;
+} 
+
+.modal-search {
+    box-sizing: border-box;
+}
+
+.modal {
+
+    width: calc(100% - (100vw - 100%));
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: var(--dark-color-40);
+
+}
+
+.modal-search__content {
+    background-color: var(--white-color);
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 30px;
+    width: 35vw;
+    height: 55vh;
+    overflow: auto;
+}
+.modal-search__content::-webkit-scrollbar {
+    width: 4px;
+    background-color: var(--white-color);
+}
+.modal-search__content::-webkit-scrollbar-thumb {
+    background: darkblue;
+    border-radius: 20px;
+}
+
+.not-found {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.not-found span {
+    font-size: 30px;
+}
+
+.search-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.search-content span {
+    font-size: 30px;
+}

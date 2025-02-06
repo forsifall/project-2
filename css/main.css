@@ -1,0 +1,64 @@
+body {
+    background-color: var(--dark-color);
+    height: 3000px;
+}
+
+.logo__link {
+    color: var(--color-dark);
+    text-decoration: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.logo__svg text {
+    fill: var(--color-dark);
+    font-family: "Gowun Dodum";
+}
+
+.logo__svg:hover text {
+    fill: var(--dark-color-600);
+}
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 28px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    height: 2.3rem;
+}
+
+.menu li {
+    font-size: clamp(1.25rem, 0.582rem + 1.08vw, 1.475rem);
+    font-family: "Gowun Dodum";
+}
+
+.menu a {
+    position: relative;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    border-radius: 10px;
+    border-bottom: 2px solid var(--warm-blue);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.menu a:hover::before {
+    content: "";
+    left: 0;
+    width: 100%;
+}
+
+

@@ -1,0 +1,98 @@
+.gallerey2__container {
+    max-width: 1200px;
+    height: 70vh;
+    margin: auto;             
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 8rem;
+
+    view-timeline: --gallerey2;
+}
+
+.gallerey2__main-block {
+    grid-row: 1 / 9;
+    grid-column: 1 / 7;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+
+    animation-name: scroll-gallerey2-right;
+    animation-timeline: --gallerey2;
+    animation-range: 5% 40%;
+    animation-fill-mode: both;
+}
+
+.gallerey2__right-top-block {
+    grid-row: 1 / 5;
+    grid-column: 7 / 11;
+    background-color: black;
+}
+.gallerey2__right-top-block img {
+    animation-timeline: --gallerey2;
+    animation-name: scroll-gallerey2-left;
+    animation-range: 10% 35%;
+    animation-fill-mode: both;
+}
+
+.gallerey2__right-bottom-block img {
+    animation-timeline: --gallerey2;
+    animation-name: scroll-gallerey2-bottom;
+    animation-range: 10% 45%;
+    animation-fill-mode: both;
+}
+.gallerey2__right-bottom-block {
+    grid-row: 5 / 9;
+    grid-column: 7 / 11;
+    background-color: black;
+
+}
+
+.gallerey2__photo {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.gallerey2__buttons.prev {
+    bottom: 40%;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+.gallerey2__buttons.next {
+    bottom: 40%;
+    right: 0;
+    position: absolute;
+    
+}
+
+.gallerey2__photo.active {
+    opacity: 1;
+}
+
+.gallerey2__under-photo {
+    display: flex;
+    width: 100%;
+    height: 6%;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+}
+
+.gallerey2__buttons.next {
+    cursor: pointer;
+    user-select: none;
+}
+.gallerey2__buttons.prev {
+    cursor: pointer;
+    user-select: none;
+}
+
+.photo-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+}

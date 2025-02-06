@@ -1,0 +1,178 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media(max-width: 1920px) {
+   
+    .header__container {
+        width: clamp(100px,1092px,1092px);
+       }
+
+       .gallerey1__text-sectionM span {
+        margin-right: 125px;
+    }
+
+}
+
+@media(max-width: 1200px) {
+    .hero-section {
+        background-position: 50% 50%;
+    }
+
+    .header__container {
+        width: clamp(100px,900px,900px);
+
+       }
+       
+       .skate-image,
+       .skate-man {
+        display: none;
+       }
+
+       .gallerey1__text-sectionM span {
+        margin-right: 0px;
+    }
+
+    .modal-search__content {
+        width: 60%;
+    }
+
+}
+
+@media(max-width: 992px) {
+
+    .header__container {
+        width: clamp(100px,400px,400px);
+
+       }
+       .menu {
+        display: none;
+       }
+
+       .skate-image,
+       .skate-man {
+        display: none;
+       }
+
+       .modal-search__content {
+        width: 70%;
+    }
+
+    .gallerey {
+        display: flex;
+        flex-flow: column wrap;
+        height: auto;
+ }
+
+ .gallerey2__right-top-block {
+    display: none;
+ }
+
+ .gallerey2__right-bottom-block {
+    display: none;
+ }
+
+.gallerey1__container {
+    height: auto;
+}
+
+.gallerey2__main-block,
+.gallerey2__right-top-block,
+.gallerey2__right-bottom-block {
+    height: 600px;;
+}
+
+.gallerey2__photo {
+    object-fit: cover;
+}
+
+.gallerey__photo {
+    width: 100%;
+}
+
+.gallerey1__main-block {
+    flex-direction: column;
+}
+
+.gallerey1__text-sectionM {
+    width: 100%;
+    height: 200px;
+}
+
+}
+
+@media(max-width: 768px) {
+
+   .logo__svg text {
+    display: none;
+
+   }
+
+   .logo__svg {
+    width: 100px;
+
+   }
+
+   .header__container {
+
+    width: clamp(100px,300px,300px);
+   }
+
+   .modal-search__interection-buttons span:nth-child(2) {
+    display: none;
+}
+   .modal-search__interection-buttons span:nth-child(1) {
+    display: none;
+}
+
+   .label p {
+    max-width: 400px;
+   }
+
+   .modal-search {
+    width: 450px;
+   }
+
+
+}
+
+@media(max-width: 576px) {
+ 
+    .menu {
+        display: none;
+    }
+
+    .label.label--top-left {
+        left: 5%;
+        top: 30%;
+    }
+
+       .modal-search__interection-buttons span:nth-child(2) {
+        display: none;
+    }
+       .modal-search__interection-buttons span:nth-child(1) {
+        display: none;
+    }
+    
+    .label p {
+        max-width: 300px;
+       }
+    
+       .label {
+        max-width: 280px;
+       }
+
+       .modal-search {
+        width: 80%;
+       }
+
+       .modal-search__content {
+        width: 90%;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+ }
