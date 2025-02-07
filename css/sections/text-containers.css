@@ -19,6 +19,7 @@
     max-width: 1200px;
     text-overflow: clip;
     overflow: hidden;
+    user-select: none;
 }
 
 .underLine-animation-observer {
@@ -38,7 +39,6 @@
     font-size: 20px;
     color: var(--white-color-30);
     letter-spacing: 1px;
-    /* background-color: red; */
 }
 
 .text-container__text-content-left {
@@ -46,7 +46,6 @@
     font-size: 25px;
     font-family: 'Franklin Gothic Medium';
     color: var(--white-color-10);
-    /* background-color: aqua; */
 }
 
 .text-container__text-content-right span:first-child {
@@ -63,7 +62,6 @@
 .textNormal {
     text-wrap:balance;
     opacity: 0;
-    
 }
 
 .textNormalAnimation {

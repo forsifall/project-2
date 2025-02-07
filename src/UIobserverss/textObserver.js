@@ -13,9 +13,7 @@ let textIsObserve = (entries,text) => {
 
             text.unobserve(entry.target);
         }
-        //  else {
-        //     entry.target.classList.remove('textNormalAnimation')
-        // }
+
     }) 
 }
 

@@ -1,0 +1,91 @@
+.blackout-page {
+    width: 100%;
+    height: 250vh;
+    position: relative;
+    view-timeline: --blackout-container;
+}
+
+.blackout-page__container {
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.blackout-page__container img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+
+}
+
+.blackout-page__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.486);
+    z-index: 2;
+
+    animation-timeline: --blackout-container;
+    animation-name: blackout-page;
+    animation-fill-mode: both;
+}
+
+.blackout-page__text {
+
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.blackout-page__text .underline {
+
+   font-size: 50px;
+   color: white;
+
+}
+
+.blackout-page__text span:first-child {
+
+   margin-left: 30px;
+   letter-spacing: 5px;
+   
+}
+
+.text-column{
+
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 25px;
+    color: var(--white-color-10);
+}
+
+.text-column span {
+    text-wrap: balance;
+    color: var(--white-color-30);
+}
+
+.blackout-page__text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
