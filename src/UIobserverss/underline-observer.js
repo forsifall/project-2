@@ -13,11 +13,9 @@ let observeUnderline = (enties,observer) => {
 
             entry.target.classList.add('underLine-animation-observer');
 
-            
-        } else {
-            entry.target.classList.remove('underLine-animation-observer')
-        }
-
+            observer.unobserve(entry.target)
+        } 
+    
     })
 }
 

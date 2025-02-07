@@ -40,6 +40,10 @@
         width: 60%;
     }
 
+    .underline {
+        max-width: 800px;
+    }
+
 }
 
 @media(max-width: 992px) {
@@ -102,6 +106,14 @@
     height: 200px;
 }
 
+.text-container__text-sections {
+    width: 500px;
+}
+
+.underline {
+    max-width: 600px;
+}
+
 }
 
 @media(max-width: 768px) {
@@ -136,6 +148,10 @@
     width: 450px;
    }
 
+
+   .underline {
+    max-width: 400px;
+}
 
 }
 
@@ -173,6 +189,21 @@
         width: 90%;
         margin-right: 20px;
         text-align: center;
+    }
+
+    .text-container__text-sections {
+        width: auto;
+    }
+
+    .text-container__text-content-left {
+        width: auto;
+    }
+    .text-container__text-content-right {
+        width: 90%;
+    }
+
+    .underline {
+        max-width: 250px;
     }
 
  }

@@ -1,31 +1,75 @@
 .text-container {
+
     width: 100%;
-    height: 10vh;
     display: flex;
     flex-flow: column wrap;
     align-items:center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.554);
-    margin-top: 8rem;
+    background-color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
 
 .underline {
     opacity: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    max-width: 1200px;
+    text-overflow: clip;
+    overflow: hidden;
 }
 
 .underLine-animation-observer {
     animation-name: show-underline;
     animation-duration: 2.5s;
-    animation-delay: 0.2s;
     animation-fill-mode: both;
     transform-origin: left;
 }
 
-.text-container__positionText {
-    width: 58%;
-    height: 80%;
+
+
+.text-container__text-content-right {
+    width: 60%;
     display: flex;
-    justify-content: flex-end;
-    align-items: end;
+    flex-flow: column nowrap;
+    gap: 60px;
+    font-size: 20px;
+    color: var(--white-color-30);
+    letter-spacing: 1px;
+    /* background-color: red; */
+}
+
+.text-container__text-content-left {
+    width: 20%;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+    color: var(--white-color-10);
+    /* background-color: aqua; */
+}
+
+.text-container__text-content-right span:first-child {
+    color: var(--white-color-10);
+}
+
+.text-container__text-sections {
+    width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.textNormal {
+    text-wrap:balance;
+    opacity: 0;
+    
+}
+
+.textNormalAnimation {
+    animation-name: show-text;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
 
 }
