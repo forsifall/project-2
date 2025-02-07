@@ -10,12 +10,13 @@ let observeUnderline = (enties,observer) => {
     enties.forEach((entry) => {
 
         if(entry.isIntersecting) {
-            console.log('наблюдаю линию');
 
             entry.target.classList.add('underLine-animation-observer');
 
-            observer.unobserve(entry.target);
-        } 
+            
+        } else {
+            entry.target.classList.remove('underLine-animation-observer')
+        }
 
     })
 }
