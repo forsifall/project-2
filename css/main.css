@@ -61,4 +61,30 @@ body {
     width: 100%;
 }
 
+.sigIn {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--dark-color-40);
+    border-radius: 50%;
+    margin-left: 10px;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.4s;
+    color: black;
+    font-weight: 800;
+
+}
+
+.sigIn:hover {
+    border-color: var(--dark-color-80);
+}
+
+.profile path {
+    transition: 0.4s;
+}
+
+.header__d-flex:has(.sigIn:hover) .profile path {
+    fill: var(--dark-color-80);
+}
 

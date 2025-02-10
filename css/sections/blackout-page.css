@@ -34,7 +34,7 @@
 
     animation-timeline: --blackout-container;
     animation-name: blackout-page;
-    animation-fill-mode: both;
+    animation-fill-mode: both;  
 }
 
 .blackout-page__text {

@@ -23,7 +23,7 @@
     }
 
     .header__container {
-        width: clamp(100px,900px,900px);
+        width: clamp(100px,950px,950px);
 
        }
        
@@ -42,6 +42,10 @@
 
     .underline {
         max-width: 800px;
+    }
+
+    .sigIn {
+        margin-left: 0px;
     }
 
 }

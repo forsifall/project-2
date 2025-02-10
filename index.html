@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/sections/blackout-page.css">
     <link rel="stylesheet" href="css/sections/gallerey1.css">
     <link rel="stylesheet" href="css/sections/gallerey2.css">
+    <link rel="stylesheet" href="css/profile-interface.css">
     <link rel="stylesheet" href="css/sections/text-containers.css">
     <link rel="stylesheet" href="css/directions/media.css">
     <link rel="stylesheet" href="css/directions/starting-style.css">
@@ -26,12 +27,10 @@
 </head>
 <body>
 
-    
 <section class="hero-section">
 <video class="bg-video" src="video/video skate.mp4" type="video/mp4" autoplay muted loop></video>
 <div class="header">
-<div class="header__container">
-    
+<div class="header__container">    
 <div class="header__d-flex">    
 <a href="#" class="logo__link" draggable="false">
 <svg class="logo__svg" width="205px" height="91px" > 
@@ -42,7 +41,6 @@
 </text>  
 </svg>
 </a>
-
 <div class="header__middle-content">
 
 <input class="header__search" id="headerSearch" type="text" placeholder="&#128269; поиск(Cntrl + K)">
@@ -83,6 +81,9 @@
     <a href="#"><li class="text-content">some3</li></a>
     <a href="#"><li class="text-content">some4</li></a>
     <a href="#"><li class="text-content">some5</li></a>
+    <div class="sigIn" style="display: flex; justify-content: center; align-items: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" class="profile" width="28" height="28" viewBox="0 0 24 24"><path fill="var(--dark-color-40)" d="M12 12.75c3.942 0 7.987 2.563 8.249 7.712a.75.75 0 0 1-.71.787c-2.08.106-11.713.171-15.077 0a.75.75 0 0 1-.711-.787C4.013 15.314 8.058 12.75 12 12.75m0-9a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5"/></svg>
+    </div>
     
 </ul>
 
@@ -97,16 +98,51 @@
 <h1>Steam online store with <span class="word-skateboarding">skateboarding</span> assortment.</h1><br>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae assumenda, voluptatem veniam, ullam quas iure</p><br>
 <button class="label__button1">buy$$</button>
-<!-- <button class="label__button2">заказать</button> -->
 </div>
 
 <div class="skate-man">
 <img class="skate-image" src="images/lifestyle-brunette-hispanic-fashion-activity-Photoroom.png" draggable="false">
 </div>
 
+
+<!-- PROFILE MODAL WINDOW -->
+
+<template id="profileModalWindow">
+<div class="modal">
+    <div class="profile__sigIn">
+        <div class="profile__header">
+        <span>войти</span>
+        <span>регистрация</span>
+        <div class="profile__cross-container">
+            <svg xmlns="http://www.w3.org/2000/svg" class="profile__cross" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21l-9-9m0 0L3 3m9 9l9-9m-9 9l-9 9"/></svg>
+        </div>
+    </div>
+        <div class="sigIn-block">
+            <form class="profile__form">
+            <span>
+            <label>email</label>
+                <input type="text" class="login" id="email">
+            </span>
+            <span>
+            <label>пароль</label>
+                <input type="password" class="password" id="password">
+            </span>
+            <div class="profile__submit-container">
+                <button type="submit" class="profile__submit">отправить</button>
+                <!-- <button type="button" class="profile__sigOut">выход</button> -->
+             </div>
+         </form>
+        </div>
+        <div class="profile__footer"></div>
+    </div>
+</div>
+</template>
+
 </section>
 
 <!-- GALLEREY1 BODY  -->
+
+
 
 <div class="gallerey1__container">
 <div class="gallerey">
@@ -188,7 +224,6 @@
     </div>
 </div>
 </div>
-
 
 <div class="blackout-page">
     <div class="blackout-page__container">
@@ -275,7 +310,7 @@
    </div>
 </div>
 
-
+<script src="src/models/authentication.js" type="module"></script>
 <script src="src/main.js" type="module"></script>
 </body>
 </html>
